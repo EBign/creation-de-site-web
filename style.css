@@ -1,0 +1,241 @@
+@font-face {
+    font-family: "centurion";
+    src: url("CENTURION.ttf");
+}
+
+body{
+    height: auto;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    text-align: center;
+}
+
+header{
+    height: 250px;
+    width: 100%;
+    background-color: black;
+    display: block;
+    text-align: center;
+    align-items: initial;
+    overflow: hidden;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.montreheader{
+    height: auto;
+}
+h1{
+    min-width: 200px;
+    font-family: centurion;
+    font-size: 50px;
+    font-weight: lighter;
+    color: azure;
+    text-align: center;
+    margin-top: 50px;
+}
+h2{
+    width: 70%;
+    margin-left: 15%;
+    font-family: arial;
+    font-size: 70px;
+    font-weight: lighter;
+    color: azure;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 10px 10px 20px black;
+}
+h3{
+    min-width: 200px;
+    font-family: arial;
+    font-size: 24px;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    margin-top: 200px; 
+}
+h4{
+    color: white;
+    margin-bottom: 50px;
+    margin-top: 150px;
+}
+p{
+    width: 80%;
+    margin-left: 10%;
+    color: white;
+    font-size: 20px;
+    font-family: arial;
+    margin-top: 200px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 1%;
+}
+.explications p{
+    text-align: justify;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.moinsjustifie{
+    background-color: transparent;
+    width: 50%;
+    margin-left: 25%;
+    color: azure;
+    font-size: 50px;
+    text-align: justify;
+}
+.bouttonnav{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: visible;
+    margin-top: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.barre{
+    width: 60px;
+    height: 6px;
+    background-color: rgb(38, 38, 175);
+    margin-top: 8px;
+}
+.croix #barre1{
+    transform: rotate(45deg);
+    transition: 0.2s;
+}
+.croix #barre2{
+    visibility: hidden;
+}
+.croix #barre3{
+    transform: rotate(-45deg) translateY(-20px) translateX(20px);
+    transition: 0.2s;
+}
+nav{
+    width: 100%;
+    visibility: hidden;
+}
+.montrenav{
+    visibility: visible;
+}
+ul{
+    width: 100%;
+    padding: 0;
+    display: block;
+    margin-top: 150px;
+}
+li{
+    font-family: centurion;
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: bold;
+    list-style: none;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+li a{
+    font-style: normal;
+    color: azure;
+    text-decoration: none;
+}
+li:hover{
+    text-decoration: underline 2px;
+    text-underline-offset: 5px;
+    cursor: pointer;
+}
+.baniere{
+    height: auto;
+    width: 100%;
+    background-image: url(bgbanniere.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding-top: 200px;
+    border-bottom: 2px solid white;
+    padding-bottom: 200px;
+}
+.donneesp{
+    text-align: center;
+    margin-top: 50px;
+}
+.donnees img{
+    width: 90%;
+    border-radius: 30px;
+}
+.cta{
+    font-size: 40px;
+    font-family: arial;
+    font-weight: bold;
+    color: azure;
+    background-color: rgb(38, 38, 175);
+    border-radius: 50px;
+    border: none;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: 0.2s;
+    margin-top: 100px;
+}
+.cta:hover{
+    cursor: pointer;
+    background-color: azure;
+    color: rgb(38, 38, 175);
+}
+footer{
+    height: 250px;
+    width: 100%;
+    background-color: rgb(38, 38, 175);
+    padding-bottom: 50px;
+}
+footer h3{
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+@media only screen and (min-width: 1200px) {
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 50px;
+        width: 50%;
+        margin-left: 25%;
+    }
+    h3{
+        margin-top: 100px;
+    }
+    p{
+        width: 50%;
+        margin-left: 25%;
+    }
+    .moinsjustifie{
+        font-size: 24px;
+    }
+    li{
+        font-weight: lighter;
+        font-size: 16px;
+    }
+    .barre{
+        width: 40px;
+        height: 3px;
+    }
+    header{
+        height: 180px;
+    }
+    .cta{
+        font-size: 18px;
+    }
+    .donnees img{
+        width: 20%;
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+    p{
+        margin-left: 24%;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+}
